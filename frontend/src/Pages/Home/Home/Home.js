@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactSliderBasic from '../ReactSlider';
 import JournalInfo from '../JournalInfo/JournalInfo';
+import Article from '../Articles/Article/Article';
 
 const Home = () => {
     return (
         <div>
-            <text className="4xl">Home</text>
             <ReactSliderBasic></ReactSliderBasic>
             <JournalInfo></JournalInfo>
+            <Article></Article>
         </div>
     );
 };

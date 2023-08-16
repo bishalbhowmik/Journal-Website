@@ -1,6 +1,7 @@
 .slider{
     border:solid 1px gray;
-    background-color: gray;
+    background: linear-gradient(to right,  #b6a1d8 25%, #77a9bb 100% );
+
     position: relative;
     height: 300px;
     overflow: hidden;
@@ -32,15 +33,13 @@
     color: #fff;
 }
 .slider-indicator-item{
-    font-size:20px;
-    background-color: greenyellow;
-    border-radius: 50%;
+    font-size:17px;
     padding: 4px 10px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .slider-indicator-item.active{
-    background-color: red;
+    color: red;
 }
  
 .itemSlider .topHead {

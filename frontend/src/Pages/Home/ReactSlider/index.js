@@ -9,23 +9,35 @@ const ReactSliderBasic = () => {
 
     const item = [
         {
-            id: 1, content: <div className='itemSlider'><button className='topHead'>Hot Deal</button><h3>Sale 10% off</h3> <button className='discoverBtn'>Dicover now</button>
+            id: 1, content: <div className='itemSlider'><button className='topHead'>Featured Article</button><h3 className='text-xl font-semibold'>Biofilm formation by the interaction of fungi (Candida tropicalis) with various bacteria
+
+            </h3> <button className='discoverBtn'>Dicover now</button>
             </div>,
             img: <img src={img1} alt="img1" />
         },
         {
-            id: 2, content: <div className='itemSlider'><button className='topHead'>Hot Deal_2</button><h3>Sale 20% off</h3> <button className='discoverBtn'>Dicover now 2</button>
+            id: 2, content: <div className='itemSlider'><button className='topHead'>Featured Article_2</button><h3>Biofilm formation by the interaction of fungi (Candida tropicalis) with various bacteria
+
+            </h3> <button>J Adv Biotechnol Exp Ther. 2022; 6(1): 84-93.
+                </button>
 
             </div>,
             img: <img src={img2} alt="img1" />
         },
         {
-            id: 3, content: <div className='itemSlider'><button className='topHead'>Hot Deal_3</button><h3>Sale 30% off</h3> <button className='discoverBtn'>Dicover now 3</button>
+            id: 3, content: <div className='itemSlider'><button className='topHead'>Featured Article_3</button><h3>Biofilm formation by the interaction of fungi (Candida tropicalis) with various bacteria
+
+            </h3>
+                <p>J Adv Biotechnol Exp Ther. 2022; 6(1): 84-93.
+                </p>
             </div>,
             img: <img src={img1} alt="img1" />
         },
         {
-            id: 4, content: <div className='itemSlider'><button className='topHead'>Hot Deal_3</button><h3>Sale 30% off</h3> <button className='discoverBtn'>Dicover now 3</button>
+            id: 4, content: <div className='itemSlider'><button className='topHead'>Featured Article_3</button><h3>Biofilm formation by the interaction of fungi (Candida tropicalis) with various bacteria
+
+            </h3> <p>J Adv Biotechnol Exp Ther. 2022; 6(1): 84-93.
+                </p>
             </div>,
             img: <img src={img2} alt="img1" />
         }
@@ -59,7 +71,6 @@ const ReactSliderBasic = () => {
 
     return (
         <>
-            <h2>Hello i m React Slider</h2>
             <div className='slider'>
                 {
                     item.map((itemContent, index) => {
@@ -77,7 +88,7 @@ const ReactSliderBasic = () => {
                                             itemContent.content
                                         }
                                     </span>
-                                    <span className='w-[500px] h-[100vh]'>
+                                    <span className='w-[500px] mx-auto h-[500px] '>
                                         {
                                             itemContent.img
                                         }

@@ -46,11 +46,9 @@ const ReactSliderBasic = () => {
     useEffect(() => {
         const id = setInterval(() => {
             setCurrentIndex((currentIndex + 1) % item.length);
-            console.log('slidre call here automaticly');
         }, 3000);
 
         setIntervalId(id);
-        console.log('yes useEffect call here _1')
         return () => clearInterval(id);
 
     }, [currentIndex, item.length]);

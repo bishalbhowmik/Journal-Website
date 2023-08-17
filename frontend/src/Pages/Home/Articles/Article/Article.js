@@ -1,48 +1,44 @@
-import React from 'react';
+import './Article.css';
+import img1 from '../../../../images/img-1.jpg';
+import { Link } from 'react-router-dom';
 
-const Article = () => {
+const Article = ({ article }) => {
+
+    const {id, title, author, publishInfo } = article;
+
+
+
+
     return (
-        <div className='my-5'>
-            <div>
-                <div>
+        <div className='article'>
+            <div className='article-area'>
+                <div className='leftside'>
                     <div>
-                        <div class="flex flex-wrap gap-2 justify-between items-center">
-                            <span class="artType">Original article</span>
-                        </div>
-                        <a class="transition-colors duration-500" href="/jabet/178-1685297439-no-evidence-of-relationship-between-colorectal-cancer-susceptibility-and-ercc2-gene-polymorphisms">
-                            <h3>No evidence of relationship between colorectal cancer susceptibility and ERCC2 gene polymorphisms</h3>
-                        </a>
-
-                        <div class="flex flex-wrap gap-x-2">
-                            <div class="flex">
-                                <div class="authors flex">
-                                    <span class="mr-1">Rand</span>
-                                    <span>Farhad</span>,
-                                </div>
-                            </div>
-                            <div class="flex">
-                                <div class="authors flex">
-                                    <span class="mr-1">Eman Saadi</span>
-                                    <span>Saleh</span>,
-                                </div>
-                            </div>
-                            <div class="flex">
-                                <div class="authors flex">
-                                    <span class="mr-1">Ahmed Zuhair</span>
-                                    <span>Alsammarraie</span>
-                                </div>
-                            </div>
+                        <div className="my-1">
+                            <span className="border-solid border-[1px] rounded border-black p-1 text-xs">Original article</span>
                         </div>
 
-                        <div class="artInfo">
-                            <span>J Adv Biotechnol Exp Ther. 2023; 6(3): 638-647 </span>
-                            <span>|</span>
-                            <a class="hover:text-orange-700 hover:underline transition-colors duration-500" href="https://doi.org/10.5455/jabet.2023.d155">Doi: 10.5455/jabet.2023.d155</a>
+                        <div>
+                            <a href="">
+                                <h3 className='artTitle text-xl font-semibold hover:underline hover:text-[#7FB2C8]'>{title}</h3>
+                            </a>
                         </div>
 
-                        <div class="artAccess">
-                        <span><a href=""></a></span>
-                        <span><a href=""></a></span>
+                        <div className="text-sm text-[#313742] my-1">
+                            <span>{author}</span>
+                        </div>
+
+                        <div className="artInfo">
+                            <span> {publishInfo} </span>
+                        </div>
+
+                        <div className="artAccess">
+                            <span>
+                                <Link to={`articleDetails/${id}`} className="flex items-center gap-1 hover:text-[#7FB2C8] hover:underline transition-colors duration-500" href=""> Read the full article</Link>
+                            </span>
+                            <span>
+                                <a className="flex items-center gap-1 hover:text-[#7FB2C8] hover:underline transition-colors duration-500" href=""> Download PDF</a>
+                            </span>
                         </div>
                     </div>
                 </div>

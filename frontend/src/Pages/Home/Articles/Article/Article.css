@@ -1,0 +1,26 @@
+.article {
+    margin-top: 30px;
+}
+
+.article-area {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.leftside {
+  
+    background-color: rgb(255, 246, 246);
+    padding: 1rem;
+    border-radius: 10px
+}
+
+
+
+.artAccess {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: rgb(45, 56, 67);
+}

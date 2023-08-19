@@ -7,6 +7,16 @@ import Editors from "../../Pages/Information/Editors/Editors";
 import Reviewers from "../../Pages/Information/Reviewers/Reviewers";
 import Authors from "../../Pages/Information/Authors/Authors";
 import InformationLayout from "../../Layout/InformationLayout/InformationLayout";
+import AboutLayout from "../../Layout/AboutLayout/AboutLayout";
+import AboutJournal from "../../Pages/About/AboutJournal/AboutJournal";
+import EditorialBoard from "../../Pages/About/EditorialBoard/EditorialBoard";
+import Indexing from "../../Pages/About/Indexing/Indexing";
+import FeesPayment from "../../Pages/About/FeesPayment/FeesPayment";
+import Contact from "../../Pages/About/Contact/Contact";
+import Announcement from "../../Pages/Announcement/Announcement";
+import Articles from "../../Pages/Home/Articles/Article/Articles";
+import Special from "../../Pages/Special/Special";
+import EditorialLayout from "../../Layout/EditorialLayout/EditorialLayout";
 
 
 
@@ -43,7 +53,57 @@ export const router = createBrowserRouter([
                     }
                 ]
 
-            }
+            },
+            {
+                path: '/about',
+                element: <AboutLayout></AboutLayout>,
+                children: [
+                    {
+                        path: '/about',
+                        element: <AboutJournal></AboutJournal>
+                    },
+                    {
+                        path: '/about/editorial',
+                        element: <EditorialBoard></EditorialBoard>
+                    },
+                    {
+                        path: '/about/indexing',
+                        element: <Indexing></Indexing>
+                    },
+                    {
+                        path: '/about/fees',
+                        element: <FeesPayment></FeesPayment>
+                    },
+                    {
+                        path: '/about/contact',
+                        element: <Contact></Contact>
+                    }
+
+                ]
+            },
+            {
+                path:'/announcement',
+                element: <Announcement></Announcement>
+            },
+            {
+                path: '/articles',
+                element: <Articles></Articles>
+            },
+            {
+                path: '/special',
+                element: <Special></Special>
+            },
+            {
+                path: '/editorial',
+                element: <EditorialLayout></EditorialLayout>,
+                children: [
+                    {
+                        path: '/editorial',
+                        element: <EditorialBoard></EditorialBoard>
+                    }
+                ]
+            },
+            
 
 
 

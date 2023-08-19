@@ -1,10 +1,11 @@
 import React from 'react';
 import './JournalInfo.css';
+import img6 from '../../../images/img-6.jpg';
 
 const JournalInfo = () => {
     return (
-        <section className='bg-slate-300 grid grid-cols-5'>
-            <div className='stat-col col-span-2 shadow-lg border rounded-md p-5'>
+        <section className='bg-[#FAF8FF] grid grid-cols-5 py-7'>
+            {/* <div className='stat-col col-span-2 shadow-lg border rounded-md p-5'>
                 <div className='topContents'>
                     <div className='title'>
                         <span className='flex justify-center items-center bg-slate-400 py-1 border rounded-sm'>
@@ -35,7 +36,13 @@ const JournalInfo = () => {
                         </span>
                     </div>
                 </div>
+            </div> */}
+
+            <div className='col-span-2'>
+                <img className='w-[80%] mx-[auto] shadow-lg border rounded-md' src={img6} alt="img-6" />
             </div>
+
+
             <div className='col-span-3'>
                 <h1>Journal of Advanced Biotechnology and Experimental Therapeutics</h1>
                 <div className='issn'>

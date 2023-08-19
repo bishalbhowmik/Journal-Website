@@ -12,7 +12,7 @@ const Article = ({ article }) => {
     return (
         <div className='article'>
             <div className='article-area'>
-                <div className='leftside'>
+                <div className='leftside shadow-lg bg-white'>
                     <div>
                         <div className="my-1">
                             <span className="border-solid border-[1px] rounded border-black p-1 text-xs">Original article</span>

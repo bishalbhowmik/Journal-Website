@@ -12,8 +12,8 @@ const Navbar = () => {
 
     const bgChange = () => {
 
-        item.classList.toggle('active');
-        side.classList.toggle('active');
+        item.classList?.toggle('active');
+        side.classList?.toggle('active');
     }
 
     const buttonRemove = (e) => {
@@ -41,7 +41,7 @@ const Navbar = () => {
         <li><Link to='/'>Special Issues</Link></li>
         <li><Link to='/'>Editorial Board</Link></li>
         <li><Link to='/'>Announcements </Link></li>
-        <li><Link to='/'>Information </Link></li>
+        <li><Link to='/info'>Information </Link></li>
         <li><Link to='/'>About </Link></li>
 
 
@@ -60,7 +60,7 @@ const Navbar = () => {
    
     return (
 
-        <div className="bg-base-100 opacity-[2]">
+        <div className="bg-[#00A7D8] text-[#E5FEFF] menu-item">
             <div className="md:hidden nav-md">
                 <div className=''>
                     <div id="toogle" onClick={bgChange} className='bishal' ></div>
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <Link to='/' className="btn btn-ghost normal-case text-xl">Journal Website</Link>
                 </div>
                 <div>
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu hover:text-[#E6F4F1] menu-horizontal px-1">
                         {menuItem}
                     </ul>
                 </div>

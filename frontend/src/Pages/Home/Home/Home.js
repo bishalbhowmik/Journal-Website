@@ -6,7 +6,7 @@ import Articles from '../Articles/Article/Articles';
 const Home = () => {
     return (
         <div>
-            <ReactSliderBasic></ReactSliderBasic>
+            {/* <ReactSliderBasic></ReactSliderBasic> */}
             <JournalInfo></JournalInfo>
             <Articles></Articles>
         </div>

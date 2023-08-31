@@ -17,6 +17,7 @@ import Announcement from "../../Pages/Announcement/Announcement";
 import Articles from "../../Pages/Home/Articles/Article/Articles";
 import Special from "../../Pages/Special/Special";
 import EditorialLayout from "../../Layout/EditorialLayout/EditorialLayout";
+import ArticleDetailscopy from "../../Pages/Home/Articles/ArticleDetailscopy/ArticleDetailscopy";
 
 
 
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
             {
                 path: '/articleDetails/:id',
                 element: <ArticleDetails></ArticleDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/article/${params.id}`)
+            },
+            {
+                path: 'articles/articleDetails/:id',
+                element: <ArticleDetailscopy></ArticleDetailscopy>,
                 loader: ({ params }) => fetch(`http://localhost:5000/article/${params.id}`)
             },
 

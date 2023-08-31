@@ -17,11 +17,8 @@ const Article = ({ article }) => {
                         <div className="my-1">
                             <span className="border-solid border-[1px] rounded border-black p-1 text-xs">Original article</span>
                         </div>
-
                         <div>
-                            <a href="">
-                                <h3 className='artTitle text-xl font-semibold hover:underline hover:text-[#7FB2C8]'>{title}</h3>
-                            </a>
+                            <Link to={`articleDetails/${id}`} className=' artTitle text-xl font-semibold hover:underline hover:text-[#7FB2C8]'>{title}</Link>
                         </div>
 
                         <div className="text-sm text-[#313742] my-1">
@@ -37,7 +34,7 @@ const Article = ({ article }) => {
                                 <Link to={`articleDetails/${id}`} className="flex items-center gap-1 hover:text-[#7FB2C8] hover:underline transition-colors duration-500" href=""> Read the full article</Link>
                             </span>
                             <span>
-                                <a className="flex items-center gap-1 hover:text-[#7FB2C8] hover:underline transition-colors duration-500" href=""> Download PDF</a>
+                                <a className="flex items-center gap-1 hover:text-[#7FB2C8] hover:underline transition-colors duration-500" href="https://drive.google.com/file/d/1lB1_Sj03C0KmPrt92ERQ_sNGQfnu8B2T/view?usp=sharing"> Download PDF</a>
                             </span>
                         </div>
                     </div>

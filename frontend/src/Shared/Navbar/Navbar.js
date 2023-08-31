@@ -38,11 +38,13 @@ const Navbar = () => {
     const menuItem = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/articles'>Articles</Link></li>
-        <li><Link to='/special'>Special Issues</Link></li>
-        <li><Link to='/editorial'>Editorial Board</Link></li>
+        {/* <li><Link to='/special'>Special Issues</Link></li> */}
+        {/* <li><Link to='/editorial'>Editorial Board</Link></li> */}
         <li><Link to='/announcement'>Announcements </Link></li>
         <li><Link to='/info'>Information </Link></li>
         <li><Link to='/about'>About </Link></li>
+        <li><Link to='/about'>SignUp </Link></li>
+        <li><Link to='/about'>Login </Link></li>
 
 
         {/* {
@@ -60,7 +62,7 @@ const Navbar = () => {
    
     return (
 
-        <div className="bg-[#00A7D8] text-[#E5FEFF] menu-item">
+        <div className="bg-[#00A7D8] text-[#E5FEFF] menu-item shadow-lg rounded-sm">
             <div className="md:hidden nav-md">
                 <div className=''>
                     <div id="toogle" onClick={bgChange} className='bishal' ></div>

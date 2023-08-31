@@ -4,9 +4,9 @@ import book from '../../../images/book.png';
 
 const AboutJournal = () => {
     return (
-        <div className='grid grid-cols-6 max-w-[90%] mx-auto'>
+        <div className='grid md:grid-cols-6 gap-x-5 gap-y-5 max-w-[90%] mx-auto mt-5 p-5'>
 
-            <div className="col-span-4">
+            <div className="md:col-span-4 bg-white shadow-md p-5">
                 <div>
                     <h1 className='text-3xl underline underline-offset-4 decoration-red-950 my-4' >
                         About Jabet
@@ -66,50 +66,20 @@ const AboutJournal = () => {
                 </div>
 
             </div>
-            <div className='col-span-2 mx-auto mt-4'>
 
 
-
-                <div className="card w-96 bg-base-100 shadow-sm mb-5">
+            <div className='md:col-span-2'>
+                <div className="card max-w-[70%] md:max-w-[90%] mx-auto bg-base-100 mb-5">
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Current Issue</h2>
-
                     </div>
 
                     <figure className="px-10">
                         <img src={book} alt="book" className="rounded-xl" />
                     </figure>
+
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Vol6- Issue 2</h2>
-                       
-                    </div>
-                </div>
-                <div className="card w-96 bg-base-100 shadow-sm mb-5">
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Current Issue</h2>
-
-                    </div>
-
-                    <figure className="px-10">
-                        <img src={book} alt="book" className="rounded-xl" />
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Vol6- Issue 2</h2>
-                       
-                    </div>
-                </div>
-                <div className="card w-96 bg-base-100 shadow-sm mb-5">
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Current Issue</h2>
-
-                    </div>
-
-                    <figure className="px-10">
-                        <img src={book} alt="book" className="rounded-xl" />
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">Vol6- Issue 2</h2>
-                       
                     </div>
                 </div>
             </div>

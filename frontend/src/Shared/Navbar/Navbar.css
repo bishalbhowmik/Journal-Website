@@ -36,6 +36,10 @@
     
 
 }
+.menu li {
+    font-size: 16px;
+    font-weight: 500;
+}
 .menu li:hover {
     color: #009c7a;
 

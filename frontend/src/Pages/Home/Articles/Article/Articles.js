@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Article from './Article';
 import './Articles.css';
+import { Link } from 'react-router-dom';
 
 const Articles = () => {
     const [articleInfo, setArticleInfo] = useState([]);
@@ -19,7 +20,7 @@ const Articles = () => {
                 <h1 className='text-3xl font-semibold'>Articles</h1>
                 <hr />
             </div>
-            <div className='grid grid-cols-2 gap-x-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-x-3'>
                 {
                     articleInfo.map(article => <Article
                         key={article.id}
@@ -28,7 +29,7 @@ const Articles = () => {
                 }
             </div>
             <div className='my-8 text-center'>
-                <button className='btn btn-outline btn-sm text-xs'>More Articles</button>
+                <Link to="articles" className='btn btn-outline btn-sm text-xs'>More Articles</Link>
             </div>
         </div>
     );

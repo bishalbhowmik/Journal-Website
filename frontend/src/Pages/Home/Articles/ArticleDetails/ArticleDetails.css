@@ -1,0 +1,7 @@
+.topmeta {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: rgb(45, 56, 67);
+    column-gap: 0.8rem
+}
